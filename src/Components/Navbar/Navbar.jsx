@@ -11,8 +11,13 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="" />
-        <p>Shopper</p>
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://akhil-ganiga.github.io/kudla-fashionzone-react/"
+        >
+          <img src={logo} alt="" />
+          <p>Shopper</p>
+        </a>
       </div>
       <ul className="nav-menu">
         <li
@@ -20,10 +25,7 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link
-            style={{ textDecoration: "none" }}
-            to="/kudla-fashionzone-react/"
-          >
+          <Link style={{ textDecoration: "none" }} to="/">
             Shop
           </Link>{" "}
           {menu === "shop" ? <hr /> : <></>}{" "}
