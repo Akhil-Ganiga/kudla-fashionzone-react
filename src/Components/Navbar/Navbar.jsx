@@ -25,7 +25,10 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/kudla-fashionzone-react/"
+          >
             Shop
           </Link>{" "}
           {menu === "shop" ? <hr /> : <></>}{" "}
@@ -35,7 +38,10 @@ const Navbar = () => {
             setMenu("mens");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/mens">
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/kudla-fashionzone-react/mens"
+          >
             Men
           </Link>{" "}
           {menu === "mens" ? <hr /> : <></>}
@@ -45,7 +51,10 @@ const Navbar = () => {
             setMenu("womens");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/womens">
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/kudla-fashionzone-react/womens"
+          >
             Women
           </Link>{" "}
           {menu === "womens" ? <hr /> : <></>}
@@ -55,7 +64,10 @@ const Navbar = () => {
             setMenu("kids");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/kids">
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/kudla-fashionzone-react/kids"
+          >
             Kids
           </Link>{" "}
           {menu === "kids" ? <hr /> : <></>}
